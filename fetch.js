@@ -1,38 +1,21 @@
-var sparqlquery = `
-    PREFIX dc: <http://purl.org/dc/elements/1.1/>
-    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-    SELECT ?cho ?title ?img WHERE {
-        ?cho dc:type "Poster."^^xsd:string .
-        ?cho dc:subject 'Pop music.'^^xsd:string .
-        ?cho dc:title ?title .
-        ?cho foaf:depiction ?img .
-    } LIMIT 300`;
-    // more fun dc:types: 'affiche', 'japonstof', 'tegel', 'herenkostuum'
-    // more fun dc:subjects with Poster.: 'Privacy.', 'Pop music.', 'Music.', 'Squatters movement.'
+const endpointUrl = 'https://query.wikidata.org/sparql',
+      sparqlQuery = `SELECT ?Amsterdam_Centrum ?Amsterdam_CentrumLabel ?instance_of ?instance_ofLabel WHERE {
+                SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+                ?Amsterdam_Centrum wdt:P276 wd:Q478282.
+                OPTIONAL { ?Amsterdam_Centrum wdt:P1456 ?instance_of. }
+            }
+            LIMIT 100`,
+      fullUrl = endpointUrl + '?query=' + encodeURIComponent( sparqlQuery ),
+      headers = { 'Accept': 'application/sparql-results+json' };
 
-var encodedquery = encodeURI(sparqlquery);
-
-var queryurl = 'https://api.data.adamlink.nl/datasets/AdamNet/all/services/endpoint/sparql?default-graph-uri=&query=' + encodedquery + '&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
-
-fetch(queryurl)
-    .then((resp) => resp.json()) // transform the data into json
-    .then(function(data) {
-    
-    rows = data.results.bindings; // get the results
-    imgdiv = document.getElementById('images');
-    console.log(rows);
-
-    for (i = 0; i < rows.length; ++i) {
-        
-        var img = document.createElement('img');
-        img.src = rows[i]['img']['value'];
-        img.title = rows[i]['title']['value'];
-        imgdiv.appendChild(img);
-
-    }
-})
-
-.catch(function(error) {
-    // if there is any error you will catch them here
-    console.log(error);
-});
+fetch( fullUrl, { headers } )
+    .then( body => body.json() )
+    .then( json => {
+        const { head: { vars }, results } = json;
+        for ( const result of results.bindings ) {
+            for ( const variable of vars ) {
+                console.log( '%s: %o', variable, result[variable] );
+            }
+            console.log( '---' );
+        }
+} );
