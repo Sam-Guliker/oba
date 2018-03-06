@@ -35,4 +35,4 @@ fetch(queryurl)
 .catch(function(error) {
     // if there is any error you will catch them here
     console.log(error);
-});
+})
