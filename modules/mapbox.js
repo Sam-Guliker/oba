@@ -1,21 +1,24 @@
+import currentData from './data.js'
+
 var mapBox = {
+  map: '',
   init: function() {
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGVjb3RyYXgiLCJhIjoiY2plZmt2MWRtMGNiNjMzcjRqd2h3d2xqZSJ9.4Jzow4RzYK6SCw0_WMxZ4A';
 
-    var map = new mapboxgl.Map({
+    this.map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v9',
       center: [4.90, 52.3745],
       zoom: 15.5
     });
-    this.popup
+    this.popup()
   },
   popup: function() {
     console.log('hi')
 
     // add markers to map
-    geojson.features.forEach(function(marker) {
+    currentData.features.forEach(function(marker) {
 
 
       // create a HTML element for each feature
@@ -26,7 +29,7 @@ var mapBox = {
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
-        .addTo(map);
+        .addTo(mapBox.map);
       const mark = new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({
@@ -39,14 +42,14 @@ var mapBox = {
                 <a href=#>Lees Meer</a>
             `)
         )
-        .addTo(map);
-    })
-    var popup = mark.getPopup()
-    var buttons = Array.from(document.querySelectorAll('.mapboxgl-pop-up-content a'))
+        .addTo(mapBox.map);
+        var popup = mark.getPopup()
+        var buttons = Array.from(document.querySelectorAll('.mapboxgl-pop-up-content a'))
 
-    popup._content.querySelector('a').addEventListener('click', function() {
-      aside.classList.add('active')
-      console.log(map)
+        popup._content.querySelector('a').addEventListener('click', function() {
+          aside.classList.add('active')
+          console.log(map)
+        })
     })
   }
 }

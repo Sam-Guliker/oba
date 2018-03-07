@@ -4,8 +4,6 @@ import mapBox from './modules/mapbox.js'
 
 (function() {
 
-  'use strict'
-
   var app = {
 
     init: function() {
