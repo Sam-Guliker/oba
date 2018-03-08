@@ -1,5 +1,5 @@
 # Oba - Amsterdam
-A 1 week project with the OBA - Amsterdam.
+An 1 week project with the :mortar_board: OBA - Amsterdam. :mortar_board:
 
 [![https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f](https://i.gyazo.com/827df2002f9a1fcd478e2115be8c1c3f.gif)](https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f)
 
@@ -9,7 +9,7 @@ clean and use the data. The subject was not given. I chose for  the "lost"buildi
 
 ## Features
 * [SPARQL](https://www.w3.org/TR/sparql11-query/)
-* [MapboxGL](https://www.mapbox.com/mapbox-gl-js/api/)
+* [MapboxGL](https://www.mapbox.com/mapbox-gl-js/api/) :ok_hand: :ok_hand:
 
 ### Getting the data
 The sparQL code. This will get you the data of the old buildings that 
@@ -43,9 +43,9 @@ such as:
 
 ### Changing the data
 After getting the data I still need to clean it up so 
-I could use it for the map.The coordinates was a pain. 
+I could use it for the map.The coordinates was a pain.:unamused:  
 I had to go into the string and clean it and seperate the `longitude` and the `latitude`.
- After that I made my own array and pushed the usable data in there.  
+ After that I made my own array and pushed the usable data in there.:relieved:  
  ```Javascript
  var encodedquery = encodeURIComponent(sparqlquery);
 
@@ -89,7 +89,7 @@ I had to go into the string and clean it and seperate the `longitude` and the `l
 ```
 
 ## Augmented Reality?
-After the project I wanted to try to play with AR for the project. 
+After the project I wanted to try to play with :fire: _AR_ :fire:  for the project. 
 Its on an other branch. I want to display the old building through your phone.
 ### License
 Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
