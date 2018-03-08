@@ -5,31 +5,16 @@
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="stylesheet" href="static/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-</head>
-<body>
-<main>
-
-  <section class="introduction">
-    <h1>The lost buildings of Amsterdam</h1>
-    <p>The marked buildings are old buildings that do not exist anymore</p>
-  </section>
-
-  <div id='map'></div>
-
-  <aside>
-    <img src="https://lorempixel.com/400/200/" alt="">
-    <h2>Titel</h2>
-    <p>Testing out my stuff</p>
-  </aside>
-
-</main>
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script type="module" src="script.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    
+    <body style='margin : 0px; overflow: hidden;'>
+    	<a-scene embedded arjs='trackingMethod: best;'>
+          <a-anchor hit-testing-enabled='true'>
+       		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+          </a-anchor>
+    		<a-camera-static/>
+    	</a-scene>
 
 </body>
 </html>
