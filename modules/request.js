@@ -1,3 +1,5 @@
+import mapBox from './mapbox.js'
+
 var sparqlRequest = {
 
   init: function() {
@@ -25,62 +27,62 @@ var sparqlRequest = {
 
     var encodedquery = encodeURIComponent(sparqlquery);
 
-    var queryurl = 'https://api.data.adamlink.nl/datasets/AdamNet/all/services/endpoint/sparql?default-graph-uri=&query=' + encodedquery + '&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
+    var queryurl = 'https://api.data.adamlink.nl/datasets/AdamNet/all/services/hva2018/sparql?default-graph-uri=&query=' + encodedquery + '&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
 
-    fetch(queryurl)
+    return fetch(queryurl)
       .then((resp) => resp.json()) // transform the data into json
       .then(function(data) {
 
         var rows = data.results.bindings; // get the results
         var imgdiv = document.getElementById('images');
+        console.log(data)
+        // var thisData = {features: []}
 
-        console.log(rows)
+        rows.forEach(function(data){
+          // console.log(data)
+          if (data.wkt.value.includes('POLYGON')) {
+            return
+          }
 
-
-        var collection = rows.map(function(data){
-          //console.log(data)
           var doc = data.wkt.value;
           var first = doc.indexOf('4');
           var end = doc.indexOf(')');
           doc = doc.substring(first, end);
 
-          var halp = doc.split(" ");
+          var coordinates = doc.split(" ");
+          console.log(coordinates)
 
-          return {
-            features:[{
-              geometry: {
-                type:'Point',
-                coordinates: [halp]
-              },
-              properties: {
-                // title:
-                bjaar: data.begin.value,
-                ejaar: data.end.value,
-                image: data.image.value
-              }
-            }]
-          }
+          thisData.features.push({
+            geometry: {
+            type:'Point',
+            coordinates: coordinates
+          },
+          properties: {
+            byear: data.begin.value,
+            eyear: data.end.value,
+            image: data.image.value,
+            name: data.label.value
+          }})
         })
 
-        for (var i = 0; i < rows.length; ++i) {
-
-          var img = document.createElement('img');
-          img.src = rows[i]['img']['value'];
-          img.title = rows[i]['title']['value'];
-          imgdiv.appendChild(img);
-
-        }
+        // for (var i = 0; i < rows.length; ++i) {
+        //
+        //   var img = document.createElement('img');
+        //   title.src = rows[i]['img']['value'];
+        //   img.title = rows[i]['title']['value'];
+        //   imgdiv.appendChild(img);
+        // }
       })
-
       .catch(function(error) {
         // if there is any error you will catch them here
         console.log(error);
       })
-  }
-  // collection: function(){
-  //
-  // }
+  },
+}
 
+var thisData = {
+  features: []
 }
 
 export default sparqlRequest
+export {thisData}

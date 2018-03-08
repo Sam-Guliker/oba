@@ -8,8 +8,9 @@ import mapBox from './modules/mapbox.js'
 
     init: function() {
       sparqlRequest.init()
-      mapBox.init()
-    }
+        .then(() => {
+          mapBox.init()
+        })}
   }
   app.init()
 })();
