@@ -1,0 +1,23 @@
+{
+  "name": "oba-amsterdam",
+  "version": "1.0.0",
+  "description": "Monuments on a map",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-Guliker/oba-amsterdam.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Sam-Guliker/oba-amsterdam/issues"
+  },
+  "homepage": "https://github.com/Sam-Guliker/oba-amsterdam#readme"
+}
