@@ -32,6 +32,7 @@ var sparqlRequest = {
     return fetch(queryurl)
       .then((resp) => resp.json()) // transform the data into json
       .then(function(data) {
+        console.log(data)
 
         var rows = data.results.bindings; // get the results
         var imgdiv = document.getElementById('images');
