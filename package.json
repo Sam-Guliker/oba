@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Sam-Guliker/oba-amsterdam/issues"
   },
-  "homepage": "https://github.com/Sam-Guliker/oba-amsterdam#readme"
+  "homepage": "https://github.com/Sam-Guliker/oba-amsterdam#readme",
+  "dependencies": {
+    "generator-aframe": "^0.5.0"
+  }
 }
