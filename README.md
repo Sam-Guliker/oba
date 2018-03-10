@@ -89,7 +89,7 @@ I had to go into the string and clean it and seperate the `longitude` and the `l
 ```
 
 ## Augmented Reality?
-After the project I wanted to try to play with :fire: _AR_ :fire:  for the project.  
+After the project I wanted to try to play with :fire: _AR_ :fire:
 Its on an other branch. I want to display the old building through your phone.
 ### License
 Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
