@@ -1,4 +1,4 @@
-# Oba - Amsterdam
+# Oba
 An 1 week project with the :mortar_board: OBA - Amsterdam. :mortar_board:    
 :fire:[LINK](https://sam-guliker.github.io/oba/):fire: to the project.
 [![https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f](https://i.gyazo.com/827df2002f9a1fcd478e2115be8c1c3f.gif)](https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f)
