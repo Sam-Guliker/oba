@@ -6,7 +6,12 @@ towards my code.
 [![https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f](https://i.gyazo.com/827df2002f9a1fcd478e2115be8c1c3f.gif)](https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f)  
 
 ## Progressive Enhancement
-With this list I will try to make my code more accessible and useful for every user.
+With this list I will try to make my code more accessible and useful for every user.  I made a list to try and tackle this subject.
+
+## Tools
+These are the tools I will be using to test my website for optimalization and accessibility.  
+[developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI) Tests on speed and optimalization.  
+[Sim Daltonism](https://itunes.apple.com/us/app/sim-daltonism/id693112260?mt=12) with this tool you can test on different colours.  This way you can test if your website is still working for people that are colourblind.  
 
 ### The list:
 * Images
@@ -48,8 +53,26 @@ This means when the CDN server is down it will load the fallback fonts.
 ### Alternative
 You can load the fonts in from your own webpage.  
 
-## Testing
+## Javascript
+Trying my website without Javascript...  
+Well this wont work :pensive:  The API loads in my data
+and Javascript generates the map.
+
+## Colours
+
+## Broadband Internet
+
+## Cookies
+
+## LocalStorage
+
+## Mouse/Trackpad
+
+## Testing with the tools
+for mobile  
 ![formobile](images/mobiletest.png)
+
+for Desktop  
 ![fordesktop](images/desktoptest.png)
 
 ## Device lab
