@@ -17,6 +17,7 @@ These are the tools I will be using to test my website for optimalization and ac
 This way you can test if your website is still working for people that are colourblind.  
 
 ### The list:
+* Cross-browser
 * Images
 * Custom fonts
 * Javascript
@@ -25,6 +26,10 @@ This way you can test if your website is still working for people that are colou
 * Cookies
 * localStorage
 * Mouse/trackpad
+
+## Cross-Browser
+Testing on different browsers to check if my code still works.  
+Works on chrome and safari. Firefox isn't working I need to debug it.
 
 ## Images
 I'm not using any images for this webpage.    
@@ -89,7 +94,11 @@ Tritanomaly
 ![sixth](images/6.png)  
 
 ## Broadband Internet
-Unfortunately I wasn't able to find anything to help me test this.
+On fast 3g the map is rendered after 1s.  
+![renderingfast](images/fast3g.png)  
+
+On slow 3G the map is rendered on 4s.
+![renderingslow](images/slow3.png)  
 
 ## Cookies
 I'm not using HTTP :cookie: , just make sure you keep the size  of the cookies as low as possible to minimize the impact on the user's response time.
