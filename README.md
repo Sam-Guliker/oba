@@ -13,7 +13,8 @@ These are the tools I will be using to test my website for optimalization and ac
 
 [developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI) Tests on speed and optimalization.  
 
-[Sim Daltonism](https://itunes.apple.com/us/app/sim-daltonism/id693112260?mt=12) with this tool you can test on different colours.  This way you can test if your website is still working for people that are colourblind.  
+[Sim Daltonism](https://itunes.apple.com/us/app/sim-daltonism/id693112260?mt=12) with this tool you can test on different colours.  
+This way you can test if your website is still working for people that are colourblind.  
 
 ### The list:
 * Images
@@ -88,14 +89,23 @@ Tritanomaly
 ![sixth](images/6.png)  
 
 ## Broadband Internet
+Unfortunately I wasn't able to find anything to help me test this.
 
 ## Cookies
+I'm not using HTTP :cookie: , just make sure you keep the size  of the cookies as low as possible to minimize the impact on the user's response time.
 
 ## LocalStorage
+Unfortunately I wasn't able to find anything to help me test this.
 
 ## Mouse/Trackpad
+![marker](images/marker.png)
+My webpage is not really accessible for tabbing at the moment.   
+Maybe I can make it more tab-able so the user can tab  through all the items on the map.
+
 
 ## Testing with the tools
+Testing using [developers.google.com]](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI)
+
 for mobile  
 ![formobile](images/mobiletest.png)
 
