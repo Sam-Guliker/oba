@@ -59,6 +59,13 @@ Well this wont work :pensive:  The API loads in my data
 and Javascript generates the map.
 
 ## Colours
+Different colourblind tests using Sin Daltonism  
+![first](images/1.png)  
+![second](images/2.png)  
+![third](images/3.png)  
+![fourth](images/4.png)  
+![fifth](images/5.png)  
+![sixth](images/6.png)  
 
 ## Broadband Internet
 
