@@ -10,7 +10,9 @@ With this list I will try to make my code more accessible and useful for every u
 
 ## Tools
 These are the tools I will be using to test my website for optimalization and accessibility.  
+
 [developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI) Tests on speed and optimalization.  
+
 [Sim Daltonism](https://itunes.apple.com/us/app/sim-daltonism/id693112260?mt=12) with this tool you can test on different colours.  This way you can test if your website is still working for people that are colourblind.  
 
 ### The list:
@@ -23,11 +25,11 @@ These are the tools I will be using to test my website for optimalization and ac
 * localStorage
 * Mouse/trackpad
 
-## Images.
+## Images
 I'm not using any images for this webpage.    
 But the stuff I can do for it is for example bringing  alt tags towards the code and maybe some aria labels if  I want to give some extra information.  
 
-### Alt tag.
+### Alt tag
 An ALTernative text describing the image.
 
 ```HTML
@@ -82,7 +84,7 @@ Tritanopia
 ![fifth](images/5.png)  
 
 Tritanomaly
- 
+
 ![sixth](images/6.png)  
 
 ## Broadband Internet
