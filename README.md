@@ -60,11 +60,18 @@ and Javascript generates the map.
 
 ## Colours
 Different colourblind tests using Sin Daltonism  
+
+Deuteroanopia  
 ![first](images/1.png)  
+Deuteranomaly  
 ![second](images/2.png)  
+Protanopia  
 ![third](images/3.png)  
+Protanomaly  
 ![fourth](images/4.png)  
+Tritanopia  
 ![fifth](images/5.png)  
+Tritanomaly
 ![sixth](images/6.png)  
 
 ## Broadband Internet
