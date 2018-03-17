@@ -101,7 +101,7 @@ On slow 3G the map is rendered on 4s.
 ![renderingslow](images/slow3g.png)  
 
 ## Cookies
-I'm not using HTTP :cookie: , just make sure you keep the size  of the cookies as low as possible to minimize the impact on the user's response time.
+I'm not using HTTP :cookie: , just make sure you keep the size  of the cookies as low as possible to minimize the impact  on the user's response time.
 
 ## LocalStorage
 Unfortunately I wasn't able to find anything to help me test this.
