@@ -2,6 +2,9 @@
 In this document I will apply some browser-technologies cases
 towards my code.  
 
+:fire:[LINK](https://sam-guliker.github.io/oba/):fire: to the project.
+[!https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f](https://i.gyazo.com/827df2002f9a1fcd478e2115be8c1c3f.gif)](https://gyazo.com/827df2002f9a1fcd478e2115be8c1c3f)  
+
 ## Progressive Enhancement
 With this list I will try to make my code more accessible and useful for every user.
 
