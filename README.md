@@ -48,5 +48,11 @@ This means when the CDN server is down it will load the fallback fonts.
 ### Alternative
 You can load the fonts in from your own webpage.  
 
+## Testing
+![formobile](images/mobiletest.png)
+![fordesktop](images/desktop.png)
+
+## Device lab
+
 ### License
 Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
