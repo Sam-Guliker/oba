@@ -50,7 +50,7 @@ You can load the fonts in from your own webpage.
 
 ## Testing
 ![formobile](images/mobiletest.png)
-![fordesktop](images/desktop.png)
+![fordesktop](images/desktoptest.png)
 
 ## Device lab
 
