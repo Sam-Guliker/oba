@@ -39,5 +39,14 @@ Accessible Rich Internet Applications (ARIA) can be used to help people with dis
   <button aria-label="Close" type="button" name="button">x</button>
 ```
 
+## Fonts
+I'm using the google web-fonts that are from another CDN.  
+This means when the CDN server is down it will load the fallback fonts.  
+
+![showing the cdn](images/webfonts.png)
+
+### Alternative
+You can load the fonts in from your own webpage.  
+
 ### License
 Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
