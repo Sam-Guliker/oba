@@ -136,9 +136,11 @@ Source: [color-blindness](http://www.color-blindness.com/tritanopia-blue-yellow-
 
 ## Broadband Internet
 On fast 3g the map is rendered after 1s.  
+
 ![renderingfast](images/fast3g.png)  
 
 On slow 3G the map is rendered on 4s.
+
 ![renderingslow](images/slow3g.png)  
 
 ## Cookies
@@ -156,7 +158,7 @@ Maybe I can make it more tab-able so the user can tab  through all the items on 
 
 
 ## Testing with the tools
-Testing using [developers.google.com]](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI)
+Testing using [developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI)
 
 ### For mobile
 
