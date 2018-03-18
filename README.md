@@ -47,8 +47,6 @@ Images make up to 64% of the average webpage. Image sizes have been
 growing in the couple of last years. The average image size at this  
 point of time is 2219kb. Four years ago this was 991kb
 
-Source: [Soasta](https://www.soasta.com/blog/page-bloat-2015-web-performance-monitoring/)
-
 I'm not using any images for this webpage.    
 But the stuff I can do for it is for example bringing  alt tags towards the code and maybe some aria labels if  I want to give some extra information.  
 
@@ -158,7 +156,9 @@ Maybe I can make it more tab-able so the user can tab  through all the items on 
 
 
 ## Testing with the tools
-Testing using [developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI)
+Web chrome dev tools, but also different test sources.
+* [Webpagetest](https://www.webpagetest.org/result/180318_TM_720ad9ed8222f15dd4ce3f79fefb07a0/)
+* [developers.google.com](https://developers.google.com/speed/docs/insights/about?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI)
 
 ### For mobile
 
@@ -199,6 +199,7 @@ look what I can do with the API and getting the images in to optimize it.
 
 ### Broadband
 * [Developers.google](https://developers.google.com/web/tools/chrome-devtools/network-performance/network-conditions)
+* [Webpagetest](https://www.webpagetest.org/result/180318_TM_720ad9ed8222f15dd4ce3f79fefb07a0/)
 
 ### License
 Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
